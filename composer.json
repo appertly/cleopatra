@@ -1,0 +1,17 @@
+{
+    "name": "appertly/cleopatra",
+    "description": "Command line argument and option parser for Hack",
+    "keywords": ["hack", "hhvm", "cli", "getopt"],
+    "homepage": "http://gitlab.com/appertly/cleopatra",
+    "require": {
+        "hhvm": "~3.12"
+    },
+    "require-dev": {
+        "hackpack/hackunit": "~0.6"
+    },
+    "autoload": {
+        "psr-4": {
+          "Cleopatra\\": "src/"
+        }
+    }
+}
