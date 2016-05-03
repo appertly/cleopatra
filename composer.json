@@ -1,6 +1,7 @@
 {
     "name": "appertly/cleopatra",
     "description": "Command line argument and option parser for Hack",
+    "license": "MIT",    
     "keywords": ["hack", "hhvm", "cli", "getopt"],
     "homepage": "http://gitlab.com/appertly/cleopatra",
     "require": {
