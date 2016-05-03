@@ -1,5 +1,5 @@
 # cleopatra
-A command line argument parser better than getopt for Hack/HHVM.
+A command line argument parser better than the builtin getopt for Hack/HHVM.
 
 It got its name because it parses *CLI* *opt* ions.
 
