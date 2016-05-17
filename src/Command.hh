@@ -29,7 +29,7 @@ class Command
     /**
      * Gets the program
      *
-     * @return The program
+     * @return - The program
      */
     public function getProgram(): string
     {
@@ -39,7 +39,7 @@ class Command
     /**
      * Gets the options
      *
-     * @return The options
+     * @return - The options
      */
     public function getOptions(): ImmMap<string,mixed>
     {
@@ -49,7 +49,7 @@ class Command
     /**
      * Gets the arguments
      *
-     * @return The arguments
+     * @return - The arguments
      */
     public function getArguments(): ImmVector<string>
     {

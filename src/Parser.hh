@@ -28,7 +28,7 @@ class Parser
      * Parses a list of arguments into a proper CLI command
      *
      * @param $arguments - The arguments
-     * @return A parsed command
+     * @return - A parsed command
      * @throws \InvalidArgumentException if the arguments parameter is empty
      * @throws \UnexpectedValueException if an unknown option is used or a required value is not supplied
      */

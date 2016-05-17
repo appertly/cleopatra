@@ -68,7 +68,7 @@ class Option
     /**
      * Gets the option description.
      *
-     * @return The description
+     * @return - The description
      */
     public function getDescription(): string
     {
@@ -78,7 +78,7 @@ class Option
     /**
      * Gets the option long aliases
      *
-     * @return The long aliases
+     * @return - The long aliases
      */
     public function getLongs(): ImmSet<string>
     {
@@ -88,7 +88,7 @@ class Option
     /**
      * Gets the option short aliases.
      *
-     * @return The short aliases
+     * @return - The short aliases
      */
     public function getShorts(): ImmSet<string>
     {
@@ -98,7 +98,7 @@ class Option
     /**
      * Gets the option type.
      *
-     * @return The type: s, i, f, d
+     * @return - The type: s, i, f, d
      */
     public function getType() : string
     {
@@ -108,7 +108,7 @@ class Option
     /**
      * Whether the option is incremental
      *
-     * @return the option incremental
+     * @return - the option incremental
      */
     public function isIncremental(): bool
     {
@@ -118,7 +118,7 @@ class Option
     /**
      * Whether the option requires a value
      *
-     * @return true if the option requires a value
+     * @return - true if the option requires a value
      */
     public function isRequired(): bool
     {
@@ -128,7 +128,7 @@ class Option
     /**
      * Whether the option can take a value
      *
-     * @return true if the option can take a value
+     * @return - true if the option can take a value
      */
     public function isOptional(): bool
     {
@@ -138,7 +138,7 @@ class Option
     /**
      * Whether the option takes no value
      *
-     * @return true if the option takes no value
+     * @return - true if the option takes no value
      */
     public function isSolo(): bool
     {
@@ -148,7 +148,7 @@ class Option
     /**
      * Whether the option can be used multiple times
      *
-     * @return true if the option is multiple
+     * @return - true if the option is multiple
      */
     public function isMultiple(): bool
     {
@@ -159,7 +159,7 @@ class Option
      * Parses an incoming value based on the type defined
      *
      * @param $value - The incoming value
-     * @return The converted value
+     * @return - The converted value
      */
     public function parse(mixed $value): mixed
     {

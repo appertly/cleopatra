@@ -52,7 +52,7 @@ class OptionSet
      * Gets an Option by label.
      *
      * @param $label - The label
-     * @return The option found or null
+     * @return - The option found or null
      */
     public function getOption(string $label): ?Option
     {
@@ -62,7 +62,7 @@ class OptionSet
     /**
      * Gets the options.
      *
-     * @return The options
+     * @return - The options
      */
     public function getOptions(): ImmVector<Option>
     {
@@ -73,7 +73,7 @@ class OptionSet
      * Combines this OptionSet with another.
      *
      * @param $other - The other options
-     * @return The new combined option set
+     * @return - The new combined option set
      * @throws \InvalidArgumentException if any option labels collide
      */
     public function combine(OptionSet $other): OptionSet
@@ -89,7 +89,7 @@ class OptionSet
     /**
      * Gets a formatted help string for the option set.
      *
-     * @return a formatted help string
+     * @return - a formatted help string
      */
     public function getHelp(): string
     {
