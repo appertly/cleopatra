@@ -3,7 +3,7 @@
  * Cleopatra
  *
  * @copyright 2016 Appertly contributors
- * @license   http://opensource.org/licenses/MIT MIT License
+ * @license   MIT
  */
 namespace Cleopatra;
 
@@ -11,7 +11,7 @@ namespace Cleopatra;
  * A parsed command
  *
  * @copyright 2016 Appertly contributors
- * @license   http://opensource.org/licenses/MIT MIT License
+ * @license   MIT
  */
 class Command
 {
