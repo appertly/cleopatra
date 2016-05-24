@@ -6,10 +6,10 @@
 
 body {
     font-family: 'Roboto', 'Open Sans', 'Droid Sans', sans-serif;
-    font-size: 16px;
     line-height: 1.25em;
     margin: 2.5em;
     color: #222;
+    min-width: 15em;
 }
 
 a {
@@ -25,23 +25,23 @@ code, pre, samp, kbd, tt {
 }
 
 h1 {
-	font-size: 64px;
+	font-size: 4em;
 	line-height: 0.9375em;
 }
 h2 {
-	font-size: 40px;
+	font-size: 2.5em;
 	line-height: 1em;
 }
 h3 {
-	font-size: 24px;
+	font-size: 1.5em;
 	line-height: 1.667em;
 }
 h4 {
-	font-size: 16px;
+	font-size: 1em;
 	line-height: 1.25em;
 }
 h5 {
-	font-size: 12px;
+	font-size: 0.75em;
 	line-height: 1.667em;
 }
 
@@ -98,44 +98,56 @@ td > *:last-child {
 	hyphens: auto;
 }
 
-.columns > .column {
-    float: left;
-    width: 50%;
-}
-.columns > .column:last-child {
-    float: right;
-}
-.columns > .column > * {
-    margin-left: 1.25em;
-    margin-right: 1.25em;
-}
-.column .column > * {
-    margin-left: 0.625em;
-    margin-right: 0.625em;
-}
-.columns > .column:first-child > * {
-    margin-left: 0;
-}
-.columns > .column:last-child > * {
-    margin-right: 0;
-}
-.columns-golden > .column {
-    width: 38.097%;
-}
-.columns-golden.big-right > .column:last-child,
-.columns-golden.big-left > .column:first-child {
-    width: 61.803%;
+@media (min-width: 768px) {
+	.columns > .column {
+		float: left;
+		width: 50%;
+	}
+	.columns > .column:last-child {
+		float: right;
+	}
+	.columns > .column > * {
+		margin-left: 1.25em;
+		margin-right: 1.25em;
+	}
+	.column .column > * {
+		margin-left: 0.625em;
+		margin-right: 0.625em;
+	}
+	.columns > .column:first-child > * {
+		margin-left: 0;
+	}
+	.columns > .column:last-child > * {
+		margin-right: 0;
+	}
+	.columns-golden > .column {
+		width: 38.097%;
+	}
+	.columns-golden.big-right > .column:last-child,
+	.columns-golden.big-left > .column:first-child {
+		width: 61.803%;
+	}
 }
 
 /* ==========================================================================
    These are some useful utility classes from both H5BP and Bootstrap
    ========================================================================== */
 
+.ir,
+.text-hide {
+	font: ~"0/0" a;
+	color: transparent;
+	text-shadow: none;
+	background-color: transparent;
+	border: 0;
+}
+
 .hidden {
     display: none !important;
 }
 
-.sr-only, .visuallyhidden {
+.sr-only,
+.visuallyhidden {
     border: 0;
     clip: rect(0 0 0 0);
     height: 1px;
