@@ -129,6 +129,44 @@ td > *:last-child {
 	}
 }
 
+#universe {
+    max-width: 1020px;
+    margin: 0 auto;
+}
+.logo {
+    background-image: url("../favicon.svg");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;
+    height: 100px;
+    margin-bottom: 1.25em;
+}
+.install {
+    margin-top: 1.25em;
+}
+#page-header h2 {
+    font-size: 1.5em;
+	line-height: 1.667em;
+    margin-top: 0.833em;
+}
+code {
+    background-color: #e0f5ff;
+}
+pre {
+    background-color: #f1f1f1;
+    padding: 1.25em;
+    overflow-x: auto;
+}
+pre code {
+    background-color: transparent;
+}
+#page-footer {
+    color: rgba(34, 34, 34, 0.62);
+}
+#page-footer a {
+    color: rgba(0, 0, 238, 0.62);
+}
+
 /* ==========================================================================
    These are some useful utility classes from both H5BP and Bootstrap
    ========================================================================== */

@@ -36,26 +36,84 @@
         <link rel="apple-touch-icon-precomposed" href="favicon-57.png">
     </head>
     <body>
-        <div class="universe">
-            <a class="visuallyhidden focusable" id="skip-to-main" href="#main">Skip to main content</a>
-            <header id="page-header" role="banner">
-                    <h1>cleopatra</h1>
-                    <h2>A command line argument parser better than the builtin getopt for Hack/HHVM.</h2>
-                <div class="region clearfix">
+        <div id="universe">
+            <div class="columns columns-golden big-right clearfix">
+                <div class="column">
+                    <header id="page-header" role="banner">
+                        <div class="logo" role="presentation"></div>
+                        <h1>Cleopatra</h1>
+                        <h2>A command line argument parser better than the builtin <code>getopt</code> for Hack/HHVM.</h2>
+                        <div class="region clearfix">
+                        </div>
+                    </header>
+                    <div class="install">
+                        <h4>Install via Composer</h4>
+                        <pre class="language-bash"><code>composer install appertly/cleopatra</code></pre>
+                    </div>
+                    <div class="contribute">
+                        <h4>Contribute</h4>
+                        <p>Find <a href="https://github.com/appertly/cleopatra/">the project on GitHub</a>
+                            where you can submit <a href="https://github.com/appertly/cleopatra/issues">issues</a>
+                            or <a href="https://github.com/appertly/cleopatra/pulls">pull requests</a>.
+                        </p>
+                    </div>
+                    <div class="docs">
+                        <h4>Documentation</h4>
+                        <p>A reference guide is in the works. In the meantime, check out the
+                            <a href="https://github.com/appertly/cleopatra/blob/master/README.md">README</a>
+                            or take a look at <a href="api/">the API documentation</a>.</p>
+                    </div>
                 </div>
-            </header>
-            <main role="main">
-                <div class="region clearfix">
-                    <p>It got its name because it parses <em>CLI opt</em>ions.</p>
-                    <p>Take a look at <a href="api/">the API documentation</a>.</p>
+                <div class="column">
+                    <main role="main">
+                        <div class="region clearfix">
+                            <h2>The Gist</h2>
+                            <p>Cleopatra got its name because it parses <em>CLI opt</em>ions.</p>
+                            <p>This library parses a command like this:</p>
+                            <pre class="language-bash"><code>hhvm script.hh --option foo -vvv -b bar baz</code></pre>
+                            <p>…into something like this:</p>
+                            <pre class="language-hack"><code>$program = "script.hh";
+$options = Map{"option" => "foo", "v" => 3, "b" => "bar"};
+$arguments = Vector{"baz"};</code></pre>
+                            <h3>Features</h3>
+                            <ul>
+                                <li>Short options
+                                    <ul>
+                                        <li>Multiple short options can be bundled together (e.g. <code>-abcdef</code>)</li>
+                                        <li>Short options with required values can be specified either with a space or without (e.g. <code>-d2 or -d 2</code>)</li>
+                                        <li>Short options with optional values must be specified without a space (e.g. <code>-d2</code>)</li>
+                                        <li>Short options without values can be bundled with those with values (e.g. <code>-abcd 2</code>)</li>
+                                    </ul>
+                                </li>
+                                <li>Long options
+                                    <ul>
+                                        <li>Long options with required values can be specified either with an equals sign or a space (e.g. <code>--foo bar</code> or <code>--foo="bar"</code>)</li>
+                                        <li>Long options with optional values must be specified with an equals sign (e.g. <code>--foo</code> or <code>--foo="bar"</code>)</li>
+                                    </ul>
+                                </li>
+                                <li>Normal arguments
+                                    <ul>
+                                        <li>Options can be specified in any order among regular arguments (e.g. <code>command -a value -b argument1 --opt="value" -c argument2 argument3</code>)
+                                            <ul>
+                                                <li>A real-world example of this: <code>aws --profile mine ec2 start-instances --instance-ids i-123456</code></li>
+                                            </ul>
+                                        </li>
+                                        <li>Arguments can be separated from all options with a double dash (e.g. <code>command -a value -xyz -- argument1 argument2 argument3</code>)</li>
+                                    </ul>
+                                </li>
+                                <li>Automatic help documentation</li>
+                            </ul>
+                        </div>
+                    </main>
                 </div>
-            </main>
+            </div>
             <footer id="page-footer" role="contentinfo">
                 <div class="region clearfix">
                     <div class="block">
                         <p class="copyright">
                             © 2016 <a href="https://github.com/appertly">Appertly</a>.
                             This website is licensed under <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">CC-BY 4.0</a>.
+                            The project itself is licensed under <a href="http://spdx.org/licenses/MIT.html">MIT</a>.
                         </p>
                     </div>
                 </div>
