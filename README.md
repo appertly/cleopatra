@@ -3,6 +3,9 @@ A command line argument parser better than the builtin getopt for Hack/HHVM.
 
 It got its name because it parses *CLI* *opt* ions.
 
+[![Packagist](https://img.shields.io/packagist/v/appertly/cleopatra.svg)](https://packagist.org/packages/appertly/cleopatra)
+[![Build Status](https://travis-ci.org/appertly/cleopatra.svg)](https://travis-ci.org/appertly/cleopatra)
+
 ## Installation
 
 You can install this library using Composer:
